@@ -11,7 +11,7 @@ public class BaseDatos {
 private ObjectContainer bd =null;
 	
 	private void abrirRegistro() {
-		bd = Db4oEmbedded.openFile("RegistroUsuario");
+		bd = Db4oEmbedded.openFile("RegistroINE");
 	}
 	
 	private void cerrarRegistro() {
@@ -26,15 +26,13 @@ private ObjectContainer bd =null;
 	public List<Usuario> seleccionarPersonas(){
 		abrirRegistro();
 		ObjectSet<Object> listaUsuarios = bd.queryByExample(Usuario.class);
-		List<Usuario> lp = new ArrayList<>();
+		List<Usuario> listaU = new ArrayList<>();
 
 		for (Object listaUsuarios1 : listaUsuarios) {
-			lp.add((Usuario) listaUsuarios1);
+			listaU.add((Usuario) listaUsuarios1);
 		}
-
 		cerrarRegistro();
-
-		return lp;
+		return listaU;
 		}
 	
 	public Usuario seleccionarPersona(Usuario user) {

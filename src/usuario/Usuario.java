@@ -144,11 +144,11 @@ public class Usuario {
 		Sexo = sexo;
 	}
 	public String toString () {
-		return "\n " + Nombre + "\n " +ApellidoPat + "\n "+ ApellidoMat + "  \t \t \t SEXO "+ Sexo
-		+ "\n Domicilio \n" + " C "+ Calle + " PTE "+  " MZA "+ MZ +" LT " + LT + "\n REG "+ SM + "  CP " + CP
-		+ "\n "+ Municipio + " Q.ROO \n" + " CLAVE DE ELECTOR   " + ClaveElector + "\n CURP  " + Curp + 
-		"       \t AÑO DE REGISTRO " + AñoReg + "\n ESTADO "+ Estado+ "\t MUNICIPIO "+ MunicipioCod+ "\t SECCIÓN "+ Seccion
-		+ "\n LOCALIDAD "+ Localidad+ "\t EMISION "+ Emision+ "\t VIGENCIA "+ Vigencia;
+		return "\n " + Nombre + "\n " +ApellidoPat + "\n "+ ApellidoMat + "  \t \t \t \t SEXO "+ Sexo
+		+ "\n DOMICILIO \n" + " C "+ Calle + " PTE "+  " MZA "+ MZ +" LT " + LT + "\n REG "+ SM + "  CP " + CP
+		+ "\n "+ Municipio + " Q.ROO \n" + " CLAVE DE ELECTOR      " + ClaveElector + "\n CURP  " + Curp + 
+		"       \t AÑO DE REGISTRO " + AñoReg + "\n ESTADO "+ Estado+ "\t MUNICIPIO "+ MunicipioCod+ "\t \t SECCIÓN "+ Seccion
+		+ "\n LOCALIDAD "+ Localidad+ "\t EMISION "+ Emision+ "\t \t VIGENCIA "+ Vigencia;
 		}
 	
 	
